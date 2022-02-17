@@ -14,8 +14,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20vh auto 20vh;
-    gap: 15px 0px;
+    grid-template-rows: 0.2fr auto 0.2fr;
     grid-template-areas:
       "header"
       "main"
@@ -23,24 +22,24 @@
   }
 
 /*---header--- */
-    .header{
+    /* .header{
         grid-area: header;
         background-color:#e5eaf5;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
+    } */
 
-    .header div{
+    /* .header div{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
-
+ 
     .header img{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 
     .header h1 a{
@@ -117,8 +116,7 @@
 
     .idioma div img{
         border: 15px double #e5eaf5;
-        width: 150px;
-
+        width: 30px;
     }
       
 
