@@ -122,15 +122,14 @@
 
     /* ---imagenes galeria---- */
 
-    .imagenes{
+     .imagenes{
         background-color:#d0bdf4;
         border: 10px double #e5eaf5;
         text-align: center;
-        letter-spacing: 25px;
         display: flex;
         justify-content: center; 
 
-    }
+    } 
 
 
     /* ---formulario--- */
