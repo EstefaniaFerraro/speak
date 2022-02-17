@@ -73,18 +73,17 @@
 
     /* ----Hero--- */
     .hero{
-        background-image: url(../multimedia/pexels-photo-5088017.jpeg);
+        background-image: url(../multimedia/pexels-edgar-colomba-2240293.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        height: 400px;       
+        height: 350px;    
     }
 
     .hero p{
-        font-size: 40px;
+        font-size: 30px;
         display: flex;
-        justify-content: center;
-        color: #a28089;        
+        color: black;        
     
     }
 
