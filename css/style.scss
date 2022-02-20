@@ -1,0 +1,298 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  list-style: none;
+}
+
+/* ----GRID---- */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr auto 0.2fr;
+    grid-template-areas: "header" "main" "footer";
+}
+
+
+/* ----Header---- */
+
+.header{
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav ul {
+        display: flex;
+        font-weight: bold;
+    }
+    
+    nav ul li:hover {
+        transform: scale(1.1);
+        transition: all 0.2s ease-in-out;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}
+
+
+/* ---Hero--- */
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/pexels-edgar-colomba-2240293.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero div h1 p {
+    font-size: 40px;
+    display: flex;
+    color: black;
+}
+
+/* ---Idioma---*/
+
+.idioma {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d0bdf4;
+  border: 10px double #e5eaf5;
+}
+
+.idioma{
+
+    div {
+  padding: 50px;
+    }
+
+    div h2 {
+  text-align: center;
+    }
+
+    div p {
+  width: 500px;
+  text-align: center;
+  padding: 20px;
+    }
+
+    div img {
+  border: 15px double #e5eaf5;
+  width: 30px;
+    }
+}
+
+/* ---Imagenes galeria---- */
+
+.imagenes img:hover {
+  background-color: #d0bdf4;
+  border: 10px double #e5eaf5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+
+}
+
+/* ---Formulario--- */
+
+.formulario section form {
+  background-color: #d0bdf4;
+}
+
+/* ---Conocenos--- */
+
+.conocenos {
+  background-color: #d0bdf4;
+  display: flex;
+  padding-left: 15px;
+  border: 15px double #e5eaf5;
+}
+
+.conocenos div img {
+  width: 100px;
+  padding-left: 20px;
+}
+
+/*---Cursos---*/
+
+.cursos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d0bdf4;
+  border: 10px double #e5eaf5;
+}
+
+.cursos ul li {
+  padding: 20px;
+  text-align: center;
+  width: 500px;
+}
+
+.cursosImg {
+  display: flex;
+}
+
+.cursosImg img {
+  border: 15px double #e5eaf5;
+  width: 33%;
+  height: 250px;
+  margin-left: 5px;
+  filter: sepia(1);
+  transition: all 0.4s ease-in-out;
+}
+
+.cursosImg img:hover {
+  filter: sepia(0);
+  transition: all 0.4s ease-in-out;
+}
+
+/* ---footer--- */
+.footer {
+  grid-area: footer;
+  background-color: #a28089;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer ul li {
+  font-size: 15px;
+}
+
+.footer div a img {
+  width: 20px;
+  margin-left: 15px;
+}
+
+/* ---Media queries---- */
+@media screen and (max-width: 780px) {
+  .idioma {
+    flex-direction: column;
+  }
+
+  .idioma div {
+    padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .idioma div img {
+    flex-direction: column;
+  }
+
+  .header {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  .header {
+    justify-content: center;
+  }
+
+  .idioma div img {
+    height: 120px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 720px) {
+  .cursosImg {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cursosImg img {
+    border: 15px double #e5eaf5;
+    width: 80%;
+    height: 400px;
+    margin-left: 5px;
+  }
+}
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.scss.map */
