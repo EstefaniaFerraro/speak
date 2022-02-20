@@ -54,10 +54,22 @@
   align-items: center;
 }
 
-.hero div h1 p {
+.hero{
+
+    h1{
     font-size: 40px;
     display: flex;
     color: black;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    li{
+        font-size: 25px;
+    }
+
 }
 
 /* ---Idioma---*/
