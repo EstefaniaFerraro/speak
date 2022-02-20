@@ -94,6 +94,10 @@
 /* ---Formulario--- */
 .formulario section form {
   background-color: #d0bdf4;
+  text-align: justify;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
 }
 
 /* ---Conocenos--- */
