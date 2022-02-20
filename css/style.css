@@ -70,21 +70,23 @@
         margin-right: 10px;  
     }
 
+    /* ---Hero--- */
 
-    /* ----Hero--- */
-    .hero{
-        background-image: url(../multimedia/pexels-edgar-colomba-2240293.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 350px;  
+    .hero div h1 p{
+        font-size: 40px;
+        display: flex;
+        color: black;
+        
     }
 
-    .hero p{
-        font-size: 30px;
+
+    .hero{
+        height: 100vh ;
+        background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 0.5)), url(../multimedia/pexels-edgar-colomba-2240293.jpg);
+        background-size: cover;
         display: flex;
-        color: black;        
-    
+        justify-content: center;
+        align-items: center;
     }
 
     /* ---Idioma---*/
