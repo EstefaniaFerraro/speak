@@ -71,7 +71,7 @@
       li{
         font-size: 25px;
       }
-      buttom{
+      button{
         margin: auto;
       }
   }
@@ -85,29 +85,25 @@
   align-items: center;
   background-color: #d0bdf4;
   border: 10px double #e5eaf5;
+
+  div {
+    padding: 50px;
+
+    h2{
+      text-align: center;
+    }
+    p{
+      width: 500px;
+      text-align: center;
+      padding: 20px;
+    }
+    img{
+        border: 15px double #e5eaf5;
+        width: 30px;
+    }
+  }
 }
 
-.idioma{
-
-    div {
-  padding: 50px;
-    }
-
-    div h2 {
-  text-align: center;
-    }
-
-    div p {
-  width: 500px;
-  text-align: center;
-  padding: 20px;
-    }
-
-    div img {
-  border: 15px double #e5eaf5;
-  width: 30px;
-    }
-}
 
 /* ---Imagenes galeria---- */
 
@@ -139,12 +135,13 @@
   display: flex;
   padding-left: 15px;
   border: 15px double #e5eaf5;
+
+  div img {
+    width: 100px;
+    padding-left: 20px;
+  }
 }
 
-.conocenos div img {
-  width: 100px;
-  padding-left: 20px;
-}
 
 /*---Cursos---*/
 
@@ -154,31 +151,33 @@
   align-items: center;
   background-color: #d0bdf4;
   border: 10px double #e5eaf5;
+  ul li {
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+  }
 }
 
-.cursos ul li {
-  padding: 20px;
-  text-align: center;
-  width: 500px;
-}
+
 
 .cursosImg {
   display: flex;
+
+  img {
+    border: 15px double #e5eaf5;
+    width: 33%;
+    height: 250px;
+    margin-left: 5px;
+    filter: sepia(1);
+    transition: all 0.4s ease-in-out;
+   }
+   
+   &:hover {
+    filter: sepia(0);
+    transition: all 0.4s ease-in-out;
+  }
 }
 
-.cursosImg img {
-  border: 15px double #e5eaf5;
-  width: 33%;
-  height: 250px;
-  margin-left: 5px;
-  filter: sepia(1);
-  transition: all 0.4s ease-in-out;
-}
-
-.cursosImg img:hover {
-  filter: sepia(0);
-  transition: all 0.4s ease-in-out;
-}
 
 /* ---footer--- */
 .footer {
@@ -188,31 +187,34 @@
   justify-content: space-around;
   align-items: center;
   padding: 20px;
+
+  ul li {
+    font-size: 15px;
+  }
+
+  div a img {
+    width: 20px;
+    margin-left: 15px;
+  }
 }
 
-.footer ul li {
-  font-size: 15px;
-}
 
-.footer div a img {
-  width: 20px;
-  margin-left: 15px;
-}
+
 
 /* ---Media queries---- */
 @media screen and (max-width: 780px) {
   .idioma {
     flex-direction: column;
-  }
 
-  .idioma div {
-    padding: 0px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+    div {
+      padding: 0px;
+      padding-top: 30px;
+      padding-bottom: 30px;
 
-  .idioma div img {
-    flex-direction: column;
+      img {
+        flex-direction: column;
+      }
+    }
   }
 
   .header {
@@ -233,13 +235,13 @@
   .cursosImg {
     flex-direction: column;
     align-items: center;
-  }
 
-  .cursosImg img {
-    border: 15px double #e5eaf5;
-    width: 80%;
-    height: 400px;
-    margin-left: 5px;
+    img {
+      border: 15px double #e5eaf5;
+      width: 80%;
+      height: 400px;
+      margin-left: 5px;
+    }
   }
 }
 /*# sourceMappingURL=style.scss.map */

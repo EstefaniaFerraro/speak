@@ -4,6 +4,7 @@
   font-size: 18px;
   font-family: "Times New Roman", Times, serif;
   list-style: none;
+  box-sizing: border-box;
 }
 
 /* ----GRID---- */
@@ -23,37 +24,43 @@
   display: flex;
   font-weight: bold;
 }
-.header nav ul li:hover {
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
-}
 .header nav ul li a {
   text-decoration: none;
   color: black;
   font-size: 20px;
   margin-right: 10px;
 }
+.header nav ul li:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
 
 /* ---Hero--- */
 .hero {
-  height: 100vh;
+  height: 85vh;
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/pexels-edgar-colomba-2240293.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.hero h1 {
+.hero div h1 {
   font-size: 40px;
-  display: flex;
-  color: black;
+  text-align: center;
+  font-weight: 900;
 }
-.hero h2 {
+.hero div h2 {
   font-size: 30px;
+  text-align: center;
 }
-.hero li {
+.hero div li {
   font-size: 25px;
+}
+.hero div button {
+  margin: auto;
 }
 
 /* ---Idioma---*/
@@ -64,7 +71,6 @@
   background-color: #d0bdf4;
   border: 10px double #e5eaf5;
 }
-
 .idioma div {
   padding: 50px;
 }
@@ -107,7 +113,6 @@
   padding-left: 15px;
   border: 15px double #e5eaf5;
 }
-
 .conocenos div img {
   width: 100px;
   padding-left: 20px;
@@ -121,7 +126,6 @@
   background-color: #d0bdf4;
   border: 10px double #e5eaf5;
 }
-
 .cursos ul li {
   padding: 20px;
   text-align: center;
@@ -131,7 +135,6 @@
 .cursosImg {
   display: flex;
 }
-
 .cursosImg img {
   border: 15px double #e5eaf5;
   width: 33%;
@@ -140,8 +143,7 @@
   filter: sepia(1);
   transition: all 0.4s ease-in-out;
 }
-
-.cursosImg img:hover {
+.cursosImg:hover {
   filter: sepia(0);
   transition: all 0.4s ease-in-out;
 }
@@ -155,11 +157,9 @@
   align-items: center;
   padding: 20px;
 }
-
 .footer ul li {
   font-size: 15px;
 }
-
 .footer div a img {
   width: 20px;
   margin-left: 15px;
@@ -170,13 +170,11 @@
   .idioma {
     flex-direction: column;
   }
-
   .idioma div {
     padding: 0px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
-
   .idioma div img {
     flex-direction: column;
   }
@@ -200,7 +198,6 @@
     flex-direction: column;
     align-items: center;
   }
-
   .cursosImg img {
     border: 15px double #e5eaf5;
     width: 80%;
