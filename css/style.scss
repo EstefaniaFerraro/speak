@@ -4,6 +4,7 @@
   font-size: 18px;
   font-family: "Times New Roman", Times, serif;
   list-style: none;
+  box-sizing: border-box;
 }
 
 /* ----GRID---- */
@@ -24,21 +25,23 @@
         height: 100px;
     }
 
-    nav ul {
+    nav{ 
+      ul{
         display: flex;
         font-weight: bold;
-    }
-    
-    nav ul li:hover {
-        transform: scale(1.1);
-        transition: all 0.2s ease-in-out;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-        margin-right: 10px;
+        li{
+          a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            margin-right: 10px;
+          }
+          &:hover{
+            transform: scale(1.1);
+            transition: all 0.2s ease-in-out;
+          }
+        }
+      }
     }
 }
 
@@ -46,30 +49,32 @@
 /* ---Hero--- */
 
 .hero {
-  height: 100vh;
+  height: 85vh;
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/pexels-edgar-colomba-2240293.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.hero{
-
+  div{
     h1{
-    font-size: 40px;
-    display: flex;
-    color: black;
-    }
-
-    h2{
+      font-size: 40px;
+      text-align: center;
+      font-weight: 900;
+      }
+      h2{
         font-size: 30px;
-    }
-
-    li{
+        text-align: center;
+      }
+      li{
         font-size: 25px;
-    }
-
+      }
+      buttom{
+        margin: auto;
+      }
+  }
 }
 
 /* ---Idioma---*/
