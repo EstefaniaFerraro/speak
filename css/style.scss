@@ -1,3 +1,8 @@
+/* ----Variables---- */
+$rosa: #a28089;
+$lavanda: #d0bdf4;
+$blanco: #e5eaf5;
+
 * {
   margin: 0px;
   padding: 0px;
@@ -59,21 +64,42 @@
   justify-content: center;
   align-items: center;
   div{
+    background-color: rgba(253, 253, 253, 0.596);
+    padding: 20px;
+    border-radius: 20px;
     h1{
       font-size: 40px;
       text-align: center;
       font-weight: 900;
-      }
-      h2{
+    }
+    h2{
         font-size: 30px;
         text-align: center;
-      }
-      li{
+    }
+    li{
         font-size: 25px;
-      }
-      button{
+    }
+    button{
         margin: auto;
-      }
+    }
+  }
+}
+
+/* ---Frase---*/
+
+.frase {
+  background-color: #e5eaf5;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 90px;
+  padding-right: 90px;
+  text-align: center;
+
+    strong {
+      font-size: 25px;
+    }
+    span {
+    font-size: 20px;
   }
 }
 

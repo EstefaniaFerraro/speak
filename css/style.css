@@ -1,3 +1,4 @@
+/* ----Variables---- */
 * {
   margin: 0px;
   padding: 0px;
@@ -47,6 +48,11 @@
   justify-content: center;
   align-items: center;
 }
+.hero div {
+  background-color: rgba(253, 253, 253, 0.596);
+  padding: 20px;
+  border-radius: 20px;
+}
 .hero div h1 {
   font-size: 40px;
   text-align: center;
@@ -61,6 +67,22 @@
 }
 .hero div button {
   margin: auto;
+}
+
+/* ---Frase---*/
+.frase {
+  background-color: #e5eaf5;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 90px;
+  padding-right: 90px;
+  text-align: center;
+}
+.frase strong {
+  font-size: 25px;
+}
+.frase span {
+  font-size: 20px;
 }
 
 /* ---Idioma---*/
