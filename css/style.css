@@ -143,9 +143,19 @@
   box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
   height: 450px;
 }
-.conocenos .card-img-top {
+.conocenos .card .row {
+  background-color: #a28089;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.conocenos .card .row .card-img-top {
   height: 150px !important;
   width: 150px !important;
+}
+.conocenos .card:hover .row {
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease;
 }
 
 /*---Cursos---*/

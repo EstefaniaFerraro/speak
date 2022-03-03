@@ -160,7 +160,7 @@ $blanco: #e5eaf5;
 /* ---Conocenos--- */
 
 .conocenos {
-  background-color: #d0bdf4;
+  background-color: $lavanda;
   display: flex;
   padding-left: 15px;
   border: 15px double #e5eaf5;
@@ -168,17 +168,29 @@ $blanco: #e5eaf5;
   .card{
     box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
     height: 450px;
+
+    .row{
+      background-color:$rosa;
+      box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+      border-radius: 20px;
+      transition: all .3s ease;
+      
+      .card-img-top{
+        height: 150px !important;
+        width: 150px !important;
+      }
   }
 
-  .card-img-top{
-    height: 150px !important;
-    width: 150px !important;
+  &:hover{
+    .row{
+      box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.75);
+      transition: all .3s ease;
+    }
   }
   
 }
-
-
-
+  
+}
 
 
 /*---Cursos---*/
