@@ -113,7 +113,7 @@ $blanco: #e5eaf5;
   border: 10px double #e5eaf5;
 
   div {
-    padding: 50px;
+    padding: 30px;
 
     h2{
       text-align: center;
@@ -145,13 +145,16 @@ $blanco: #e5eaf5;
 
 /* ---Formulario--- */
 
-.formulario section form {
-  background-color: #d0bdf4;
-  text-align: justify;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  
+.formulario {
+  background-color: #d0bdf4
+}
+
+.input-group-text{
+  background-color: $rosa;
+  border: none;
+  i{
+    color: white;
+  }
 }
 
 /* ---Conocenos--- */
@@ -162,11 +165,20 @@ $blanco: #e5eaf5;
   padding-left: 15px;
   border: 15px double #e5eaf5;
 
-  div img {
-    width: 100px;
-    padding-left: 20px;
+  .card{
+    box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
+    height: 450px;
   }
+
+  .card-img-top{
+    height: 150px !important;
+    width: 150px !important;
+  }
+  
 }
+
+
+
 
 
 /*---Cursos---*/
@@ -191,7 +203,7 @@ $blanco: #e5eaf5;
 
   img {
     border: 15px double #e5eaf5;
-    width: 33%;
+    width: 100%;
     height: 250px;
     margin-left: 5px;
     filter: sepia(1);
@@ -218,9 +230,11 @@ $blanco: #e5eaf5;
     font-size: 15px;
   }
 
-  div a img {
-    width: 20px;
-    margin-left: 15px;
+  div {
+    width: 150px;
+  }
+  a i {
+    font-size: 30px;
   }
 }
 
@@ -253,11 +267,16 @@ $blanco: #e5eaf5;
   }
 
   .idioma div img {
-    height: 120px;
+    height: 200px;
     width: auto;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 780px) {
+
+  .idioma div img {
+    height: 300px;
+    width: auto;
+  }
   .cursosImg {
     flex-direction: column;
     align-items: center;
@@ -269,6 +288,43 @@ $blanco: #e5eaf5;
       margin-left: 5px;
     }
   }
+
+  .hero {
+    div{
+      h1{
+        font-size: 30px;
+      }
+      h2{
+          font-size: 25px;
+      }
+      li{
+          font-size: 20px;
+      }
+      button{
+          font-size: 18px;         
+      }
+    }
+  }
+
+  .card-img-top{
+    height: 90px !important;
+    width: 90px !important;
+  }
+  
+}
+
+@media screen and (max-width: 992px) {
+  .idioma {
+    div {
+      padding: 10px;
+    }
+  }
+
+  .card-img-top{
+    height: 120px !important;
+    width: 120px !important;
+  }
+
 }
 /*# sourceMappingURL=style.scss.map */
 /*# sourceMappingURL=style.scss.map */
