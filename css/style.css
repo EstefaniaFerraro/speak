@@ -135,7 +135,6 @@
 /* ---Conocenos--- */
 .conocenos {
   background-color: #d0bdf4;
-  display: flex;
   padding-left: 15px;
   border: 15px double #e5eaf5;
 }
